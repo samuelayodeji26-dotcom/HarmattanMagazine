@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261012-04-4942f96","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harmattan Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&amp;family=Cinzel:wght@400;600;700&amp;family=Cinzel+Decorative:wght@400;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Source+Serif+Pro:wght@400;600&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#1a1a1a;--cream:#faf8f5;--muted:#6b6560;--rust:#c47b40;--line:#e8e4df}
+    html{scroll-behavior:smooth}
+    body{width:100%;margin:0;background:var(--cream);color:var(--ink);font-family:'Source Serif Pro',serif;overflow-x:hidden}
+    .sans{font-family:'DM Sans',sans-serif}.display{font-family:'Playfair Display',serif}.rule{border-top:1px solid var(--line)}
+    .wordmark{display:inline-flex;align-items:center;white-space:nowrap;font-family:'Forum',serif}
+    .wordmark a{color:var(--rust);text-decoration:none}
+    .wordmark .decorative,.hero-mark .decorative{font-family:'Cinzel Decorative',serif}
+    .wordmark .cinzel,.hero-mark .cinzel{font-family:'Cinzel',serif}
+    .hero-mark{display:flex;align-items:baseline;flex-wrap:nowrap;white-space:nowrap;font-family:'Forum',serif;line-height:.95;letter-spacing:-.045em}
+    .hero-mark span{color:var(--rust);font-size:clamp(2.45rem,7.5vw,6.25rem)}
+    .editorial-image{display:block}.story-card img{transition:transform .5s ease}.story-card:hover img{transform:scale(1.03)}
+    .arrow-button::after{content:" →";display:inline-block;transition:transform .2s}.arrow-button:hover::after{transform:translateX(4px)}
+    button,a{-webkit-tap-highlight-color:transparent}
+    button:focus-visible,a:focus-visible,input:focus-visible,.team-card:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+    .team-section{background:#ebe3d2;color:#1c1a16}.team-layout{display:flex;align-items:flex-start;gap:3.5rem}
+    .team-sidebar{flex:0 0 200px;position:sticky;top:6rem}
+    .team-sidebar button{display:flex;align-items:center;gap:.7rem;width:100%;padding:.35rem 0;text-align:left;font-family:'DM Sans',sans-serif;font-size:.9rem;color:#4a453c}
+    .team-sidebar button[aria-pressed=true]{font-weight:700;color:#1c1a16}
+    .team-square{width:7px;height:7px;flex:none;border:1px solid #4a453c}
+    .team-sidebar button[aria-pressed=true] .team-square{background:var(--rust);border-color:var(--rust)}
+    .team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#c7bca2;border:1px solid #c7bca2;overflow:hidden}
+    .team-card{position:relative;display:flex;flex-direction:column;min-width:0;height:420px;background:#e2d8c2;padding:20px;cursor:pointer;text-align:left;transition:transform .3s ease,box-shadow .3s ease,background .3s ease}
+    .team-card:hover,.team-card:focus-visible{transform:translateY(-4px);box-shadow:0 12px 24px rgba(28,26,22,.16);z-index:2}
+    .team-card img{display:block;width:100%;height:300px;flex:none;object-fit:cover}
+    .team-card.featured{background:#1c1a16;color:white}
+    .team-caption{display:flex;align-items:flex-start;gap:12px;padding-top:16px;min-height:80px}
+    .team-card.featured .team-caption{color:white}
+    .team-name{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;line-height:1.25}
+    .team-role{margin-top:5px;font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.35;color:#4a453c;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .team-card.featured .team-role{color:white;opacity:.8}
+    .team-controls{display:flex;gap:8px;margin-top:1rem}
+    .team-control{width:40px;height:40px;border:1px solid #4a453c;color:#1c1a16;font:600 1rem 'DM Sans',sans-serif;transition:background .2s,color .2s}
+    .team-control:hover,.team-control:focus-visible{background:#1c1a16;color:white}
+    #featured-stories,#team,#latest-issue,#advertise{scroll-margin-top:80px}
+    @media(max-width:1100px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:820px){.team-layout{flex-direction:column;gap:1.75rem}.team-sidebar{position:static;flex:auto;width:100%;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem}.team-grid{grid-template-columns:1fr}.team-card{height:380px}.team-card img{height:260px}.hero-mark span{font-size:clamp(2rem,10vw,5rem)}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script>
+    window.dataSdk = window.dataSdk || {
+      init: async (h) => ({ isOk: true }),
+      create: async (payload) => ({ isOk: true })
+    };
+  </script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(250, 248, 245);">
+  <header class="w-full sticky top-0 z-50 border-b border-[#e8e4df] bg-[#faf8f5]/95 backdrop-blur-sm">
+   <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-1 shrink-0">
+     <a href="index.html" aria-label="Harmattan home"><img data-template-id="nav-logo" class="canva-image h-10 w-auto object-contain" loading="lazy" src="images/logo.png" alt="Harmattan logo vector"></a> <a href="index.html" class="wordmark hidden sm:inline-flex" aria-label="HARMATTAN"><span data-template-id="nav-wordmark-h" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">H</span><span data-template-id="nav-wordmark-a" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">A</span><span data-template-id="nav-wordmark-r" class="canva-link decorative" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">R</span><span data-template-id="nav-wordmark-m" class="canva-link cinzel" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">M</span><span data-template-id="nav-wordmark-a-2" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">A</span><span data-template-id="nav-wordmark-t" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">T</span><span data-template-id="nav-wordmark-t-2" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">T</span><span data-template-id="nav-wordmark-a-3" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">A</span><span data-template-id="nav-wordmark-n" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">N</span></a>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+     <a href="#featured-stories" data-template-id="nav-stories" class="canva-link sans text-sm font-medium uppercase tracking-wide hover:text-[#c4553a]" style="color: rgb(26, 26, 26); font-weight: 500; font-style: normal; font-size: 17px;">Stories</a> <a href="latest-issue.html" data-page-id="PBqvLVDvkPpKkTH0" data-template-id="nav-latest" class="canva-link sans text-sm font-medium uppercase tracking-wide hover:text-[#c4553a]" style="color: rgb(26, 26, 26); font-weight: 500; font-style: normal; font-size: 17px;">latest issue</a> <a href="about.html" data-page-id="PBvvPhQx5Wt5BBHk" data-template-id="nav-about" class="canva-link sans text-sm font-medium uppercase tracking-wide hover:text-[#c4553a]" style="color: rgb(26, 26, 26); font-weight: 500; font-style: normal; font-size: 17px;">About</a> <a href="contact.html" data-template-id="nav-contact" class="canva-link sans text-sm font-medium uppercase tracking-wide hover:text-[#c4553a]" style="color: rgb(26, 26, 26); font-weight: 500; font-style: normal; font-size: 17px;">Contact Us</a> <a href="advertise.html" data-template-id="nav-advertise" class="canva-link sans text-sm font-medium uppercase tracking-wide hover:text-[#c4553a]" style="color: rgb(26, 26, 26); font-weight: 500; font-style: normal; font-size: 17px;">Advertise</a>
+    </div>
+    <div class="flex items-center gap-2">
+     <a href="order-print.html" data-template-id="nav-subscribe-btn" class="canva-button sans text-sm font-semibold px-5 py-2.5 bg-[#c47b40] text-white hover:bg-[#a8432d] transition-colors" style="background: rgb(196, 123, 64); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 17px;">Subscribe</a> <button id="mobile-menu-toggle" data-template-id="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" class="canva-button md:hidden sans text-sm font-semibold border border-[#e8e4df] px-3 py-2" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Menu</button>
+    </div>
+   </nav>
+   <div id="mobile-menu" class="hidden md:hidden border-t border-[#e8e4df] px-6 py-4 bg-[#faf8f5]">
+    <div class="flex flex-col gap-4 sans text-sm font-semibold uppercase tracking-wide">
+     <a href="#featured-stories" data-template-id="mobile-stories" class="canva-link" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Stories</a> <a href="latest-issue.html" data-template-id="mobile-latest" class="canva-link" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Latest Issue</a> <a href="about.html" data-template-id="mobile-about" class="canva-link" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">About</a> <a href="contact.html" data-template-id="mobile-contact" class="canva-link" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Contact Us</a> <a href="advertise.html" data-template-id="mobile-advertise" class="canva-link" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Advertise</a>
+    </div>
+   </div>
+  </header>
+  <main id="top">
+   <section class="w-full px-6 py-20 md:py-28">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+     <div class="order-2 md:order-1 min-w-0">
+      <h1 class="hero-mark mb-6" aria-label="HARMATTAN"><span data-template-id="hero-title-h" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">H</span><span data-template-id="hero-title-a" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">A</span><span data-template-id="hero-title-r" class="canva-text decorative" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">R</span><span data-template-id="hero-title-m" class="canva-text cinzel" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">M</span><span data-template-id="hero-title-a-2" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">A</span><span data-template-id="hero-title-t" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">T</span><span data-template-id="hero-title-t-2" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">T</span><span data-template-id="hero-title-a-3" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">A</span><span data-template-id="hero-title-n" class="canva-text" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 93px;">N</span></h1>
+      <p data-template-id="hero-tagline" class="canva-text italic mb-6 leading-tight" style="color: rgb(107, 101, 96); font-weight: 400; font-style: italic; font-size: 53px;">Stories, perspectives and ideas worth staying with.</p>
+      <p data-template-id="hero-intro" class="canva-text leading-relaxed mb-10" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">A new kind of magazine for curious minds. We tell stories that linger about people, places, creativity, and the quiet forces shaping our world.</p>
+      <div class="flex flex-wrap gap-4">
+       <a href="#featured-stories" data-page-id="PBTGGnXFf5FGXqX0" data-template-id="hero-cta-stories" class="canva-button arrow-button sans font-semibold px-7 py-3.5 border-2 border-[#c47b40] hover:bg-[#f3f0ec] transition-colors" style="background: transparent; color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 19px;">Explore Stories</a> <a href="order-print.html" data-page-id="PBp5KYp4Tw25M2km" data-template-id="hero-cta-subscribe" class="canva-button sans font-semibold px-7 py-3.5 bg-[#c47b40] text-white hover:bg-[#a8432d] transition-colors" style="background: rgb(196, 123, 64); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Subscribe</a>
+      </div>
+     </div>
+     <div class="order-1 md:order-2"><img data-template-id="hero-image" class="canva-image editorial-image w-full aspect-[3/4] object-cover" loading="lazy" src="images/harmattan-hero.jpg" alt="Harmattan magazine cover mockup">
+     </div>
+    </div>
+   </section>
+   <section class="w-full rule">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-[280px_1fr] gap-12 md:gap-16 items-start">
+     <img data-template-id="editor-photo" class="canva-image editorial-image w-full aspect-[3/4] object-cover grayscale" loading="lazy" src="images/samuel.png" alt="Portrait of the Harmattan editor">
+     <div>
+      <p data-template-id="editor-label" class="canva-text sans font-semibold uppercase tracking-[.2em] mb-4" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 16px;">From the Editor</p>
+      <h2 data-template-id="editor-heading" class="canva-text display font-bold mb-6" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">A Note From the Editor</h2>
+      <p data-template-id="editor-welcome" class="canva-text italic mb-5" style="color: rgb(107, 101, 96); font-weight: 400; font-style: italic; font-size: 19px;">Welcome to the first issue of Harmattan.</p>
+      <p data-template-id="editor-note" class="canva-text leading-relaxed mb-8" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">The Harmattan wind is a force that demands acknowledgment. It alters the light, changes the atmosphere, and leaves a fine layer of earth on everything it touches. It is the perfect metaphor for the current wave of creative and technical energy sweeping across West Africa today. We stand at a defining intersection of time and space. For too long, the skylines of our rapidly growing cities have been shaped by an uncritical importation of foreign paradigms—sealed glass boxes that bake in our tropical sun and ignore the profound intelligence of our heritage. This issue of Harmattan is a deliberate pause, a deep breath, and a pivot. It is an exploration of what it means to truly design, build, and live in a way that honors our climate, our culture, and our uncompromising drive toward the future.</p>
+      <div id="editor-full" data-template-id="editor-note-full" class="canva-text hidden whitespace-pre-line leading-relaxed mb-8" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">The Harmattan wind is a force that demands acknowledgment. It alters the light, changes the atmosphere, and leaves a fine layer of earth on everything it touches. It is the perfect metaphor for the current wave of creative and technical energy sweeping across West Africa today. We stand at a defining intersection of time and space. For too long, the skylines of our rapidly growing cities have been shaped by an uncritical importation of foreign paradigms—sealed glass boxes that bake in our tropical sun and ignore the profound intelligence of our heritage.
+
+This issue of Harmattan is a deliberate pause, a deep breath, and a pivot. It is an exploration of what it means to truly design, build, and live in a way that honors our climate, our culture, and our uncompromising drive toward the future.
+
+Our main feature, The New Vernacular, champions this exact synthesis. We argue that true African modernism is not a nostalgic retreat, but the rigorous translation of ancestral intelligence. It is taking the passive cooling logic of Hausa tubali walls, the structural geometry of Yoruba carvings, and the poetry of Arewa motifs, and forging them into a contemporary structural language. This critical dialogue between our history and our horizon was recently brought to the forefront by our partners at Spatial Perspectives during “The Progression”—a landmark event dedicated to unpacking the past and charting the future of the Nigerian architectural design identity.
+
+But architecture is merely the canvas; the life within and around it is shaped by a wider, deeply interconnected ecosystem of design. In this issue, we traverse that vibrant terrain, exploring the boundaries of contemporary spatial intervention with ccworkshop’s striking 6-Stack project. We also dive into the mind of Victor Anachuna, whose unconventional art continually challenges us to see our narratives through a fractured, brilliant lens. This lineage of cultural expression extends seamlessly into the objects we hold and inhabit, whether we are tracing the translation of iconography into functional art with Ezekiel Osunlana’s stunning Eyo lamp, or celebrating the tactile, unapologetic craftsmanship of AAKS’s woven luxury.
+
+Because design is not static—it is inherently dynamic—we must also examine how we move between these reimagined spaces. We dissect the shifting tectonic plates of global mobility, observing the Chinese electric vehicle revolution championed by the BYD Tang, and looking toward a new, ultra-luxurious automotive reality represented by the Genesis GV90. Finally, we take to the skies to explore the absolute bleeding edge of human travel with the Bombardier Global 8000, a machine that redefines what is technologically possible in aviation.
+
+Whether we are engineering the future of global mobility, weaving sustainable luxury, or raising a new silhouette against the Lagos sky, the mandate remains the same: we are not abandoning the past; we are compiling it into the source code of our future.
+
+Welcome to the issue.</div><button id="editor-expand" data-template-id="editor-cta" type="button" aria-expanded="false" aria-controls="editor-full" class="canva-button sans font-semibold hover:underline" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 19px;">Read the Editor's Note →</button> <button id="editor-collapse" data-template-id="editor-collapse" type="button" class="canva-button hidden sans font-semibold hover:underline" style="color: rgb(196, 85, 58); font-weight: 600; font-style: normal; font-size: 17px;">↑ Collapse editor's note</button>
+     </div>
+    </div>
+   </section>
+   <section id="featured-stories" class="w-full rule bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+     <p data-template-id="stories-label" class="canva-text uppercase tracking-[.2em] mb-3" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 36px;">Featured Stories</p>
+     <h2 data-template-id="stories-heading" class="canva-text display font-bold mb-14" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 16px;">What We're Reading</h2>
+     <article class="story-card mb-14 grid md:grid-cols-2 gap-8">
+      <div class="overflow-hidden"><img data-template-id="story-featured-img" class="canva-image editorial-image w-full aspect-[4/3] object-cover" loading="lazy" src="images/6-stack-hero.png" alt="Architectural image accompanying the 6-Stack feature">
+      </div>
+      <div class="flex flex-col justify-center">
+       <span data-template-id="story-featured-cat" class="canva-tag sans font-semibold uppercase tracking-[.15em] mb-3" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 16px;">Architecture</span>
+       <h3 data-template-id="story-featured-title" class="canva-text display font-bold mb-4" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">6-Stack: Reimagining the West African Lanscape</h3>
+       <p data-template-id="story-featured-desc" class="canva-text sans leading-relaxed mb-6" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">6-Stack is a six-storey residential design proposal comprising 20 residential district of Lagos, the project explores a fundamental question: how can contemporary architecture in West Africa remain responsive to its environment while retaining a meaningful connection to the cultural landscapes from which it emerges? For Architectural Design Studio CCWorkshop, the answer lies in rejecting the conventional approach of reproducing vernacular architecture literally and treating culture as an applied aesthetic.</p><a href="article-6stack.html" data-page-id="PBTGGnXFf5FGXqX0" data-template-id="story-featured-link" class="canva-link sans font-semibold hover:underline" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 19px;">Read Story →</a>
+      </div>
+     </article>
+     <div class="grid md:grid-cols-3 gap-8">
+      <article class="story-card">
+       <div class="overflow-hidden mb-5"><img data-template-id="story-1-img" class="canva-image editorial-image w-full aspect-[4/3] object-cover" loading="lazy" src="images/brotherhood.jpg" alt="Artwork accompanying Victor Anachuna's story">
+       </div><span data-template-id="story-1-cat" class="canva-tag sans font-semibold uppercase tracking-[.15em]" style="color: rgb(196, 85, 58); font-weight: 600; font-style: normal; font-size: 16px;">Art</span>
+       <h3 data-template-id="story-1-title" class="canva-text display font-bold mt-2 mb-2" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">Victor Anachuna's Canvas</h3>
+       <p data-template-id="story-1-desc" class="canva-text sans mb-3" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">Anachuna uses his art as a lens to examine human identity, resilience, and solidarity. His work is deeply inquisitive and often serves as a direct confrontation of societal expectations and authority.</p><a href="article-victor-anachuna.html" data-page-id="PBTGGnXFf5FGXqX0" data-template-id="story-1-link" class="canva-link sans font-semibold hover:underline" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 19px;">Read Story →</a>
+      </article>
+      <article class="story-card">
+       <div class="overflow-hidden mb-5"><img data-template-id="story-2-img" class="canva-image editorial-image w-full aspect-[4/3] object-cover" loading="lazy" src="images/eyo-lamp-hero.jpg" alt="Designed lamp accompanying The Soul of Objects">
+       </div><span data-template-id="story-2-cat" class="canva-tag sans font-semibold uppercase tracking-[.15em]" style="color: rgb(196, 85, 58); font-weight: 600; font-style: normal; font-size: 16px;">Product Design</span>
+       <h3 data-template-id="story-2-title" class="canva-text display font-bold mt-2 mb-2" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">The Soul of Objects</h3>
+       <p data-template-id="story-2-desc" class="canva-text sans mb-3" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">"I often ask myself, am I a designer or an artist?" Osunlana reflects. His work sits comfortably at the intersection of both disciplines, blending material exploration with rigorous cultural inquiry. For him, design provides the analytical freedom to reshape, select, and reject. Art, conversely, offers the emotional space where visual language becomes a vessel for the stories, textures, and rhythms that form identity.</p><a href="article-soul-of-objects.html" data-page-id="PBTGGnXFf5FGXqX0" data-template-id="story-2-link" class="canva-link sans font-semibold hover:underline" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 19px;">Read Story →</a>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="team" class="team-section w-full rule">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+     <div class="md:ml-[256px] mb-12">
+      <h2 data-template-id="team-heading" class="canva-text display mb-3" style="color: rgb(28, 26, 22); font-weight: 500; font-style: normal; font-size: 48px;">Meet the Team</h2>
+      <p data-template-id="team-subtitle" class="canva-text sans" style="color: rgb(74, 69, 60); font-weight: 400; font-style: normal; font-size: 16px;">Get to know the people behind the project and what each of them brings to the team.</p>
+     </div>
+     <div class="team-layout">
+      <div class="team-sidebar" aria-label="Select team member">
+       <button type="button" data-team="member-0" aria-pressed="true"><span class="team-square" aria-hidden="true"></span><span data-template-id="team-member-0-name" class="canva-text" style="color: rgb(74, 69, 60); font-weight: 400; font-style: normal; font-size: 17px;">Samuel Ayodeji</span></button> <button type="button" data-team="member-1" aria-pressed="false"><span class="team-square" aria-hidden="true"></span><span data-template-id="team-member-1-name" class="canva-text" style="color: rgb(74, 69, 60); font-weight: 400; font-style: normal; font-size: 17px;">Otobong Essien</span></button> <button type="button" data-team="member-2" aria-pressed="false"><span class="team-square" aria-hidden="true"></span><span data-template-id="team-member-2-name" class="canva-text" style="color: rgb(74, 69, 60); font-weight: 400; font-style: normal; font-size: 17px;">Marvellous Onyemuwa</span></button> <button type="button" data-team="member-3" aria-pressed="false"><span class="team-square" aria-hidden="true"></span><span data-template-id="team-member-3-name" class="canva-text" style="color: rgb(74, 69, 60); font-weight: 400; font-style: normal; font-size: 17px;">Emmanuel Adekanmbi</span></button> <button type="button" data-team="member-4" aria-pressed="false"><span class="team-square" aria-hidden="true"></span><span data-template-id="team-member-4-name" class="canva-text" style="color: rgb(74, 69, 60); font-weight: 400; font-style: normal; font-size: 17px;">Daniel Aromolaran</span></button>
+      </div>
+      <div class="flex-1 min-w-0">
+       <div class="team-grid" id="team-grid" tabindex="0" aria-label="Team carousel">
+        <article id="member-0" class="team-card featured" tabindex="0" aria-label="Select Samuel Ayodeji"><img data-template-id="team-photo-0" class="canva-image w-full object-cover" loading="lazy" src="images/samuel.png" alt="Portrait of Samuel Ayodeji">
+         <div class="team-caption">
+          <div>
+           <p data-template-id="team-card-0-name" class="canva-text team-name" style="font-weight: 600; font-style: normal; font-size: 17px;">Samuel Ayodeji</p>
+           <p data-template-id="team-card-0-role" class="canva-text team-role" style="font-weight: 400; font-style: normal; font-size: 17px;">Publisher / Editor-in-Chief</p>
+          </div>
+         </div>
+        </article>
+        <article id="member-1" class="team-card" tabindex="0" aria-label="Select Otobong Essien"><img data-template-id="team-photo-1" class="canva-image w-full object-cover" loading="lazy" src="images/essien.jpeg" alt="Portrait of Otobong Essien">
+         <div class="team-caption">
+          <div>
+           <p data-template-id="team-card-1-name" class="canva-text team-name" style="font-weight: 600; font-style: normal; font-size: 17px;">Otobong Essien</p>
+           <p data-template-id="team-card-1-role" class="canva-text team-role" style="font-weight: 400; font-style: normal; font-size: 17px;">Managing Editor</p>
+          </div>
+         </div>
+        </article>
+        <article id="member-2" class="team-card" tabindex="0" aria-label="Select Marvellous Onyemuwa"><img data-template-id="team-photo-2" class="canva-image w-full object-cover" loading="lazy" src="images/marvellous.png" alt="Portrait of Marvellous Onyemuwa">
+         <div class="team-caption">
+          <div>
+           <p data-template-id="team-card-2-name" class="canva-text team-name" style="font-weight: 600; font-style: normal; font-size: 17px;">Marvellous Onyemuwa</p>
+           <p data-template-id="team-card-2-role" class="canva-text team-role" style="font-weight: 400; font-style: normal; font-size: 17px;">Section Editor, Art &amp; Culture</p>
+          </div>
+         </div>
+        </article>
+        <article id="member-3" class="team-card" tabindex="0" aria-label="Select Emmanuel Adekanmbi"><img data-template-id="team-photo-3" class="canva-image w-full object-cover" loading="lazy" src="images/emmanuel.png" alt="Portrait of Emmanuel Adekanmbi">
+         <div class="team-caption">
+          <div>
+           <p data-template-id="team-card-3-name" class="canva-text team-name" style="font-weight: 600; font-style: normal; font-size: 17px;">Emmanuel Adekanmbi</p>
+           <p data-template-id="team-card-3-role" class="canva-text team-role" style="font-weight: 400; font-style: normal; font-size: 17px;">Spatial Perspectives</p>
+          </div>
+         </div>
+        </article>
+        <article id="member-4" class="team-card" tabindex="0" aria-label="Select Daniel Aromolaran"><img data-template-id="team-photo-4" class="canva-image w-full object-cover" loading="lazy" src="images/butaskoch.jpeg" alt="Portrait of Daniel Aromolaran">
+         <div class="team-caption">
+          <div>
+           <p data-template-id="team-card-4-name" class="canva-text team-name" style="font-weight: 600; font-style: normal; font-size: 17px;">Daniel Aromolaran</p>
+           <p data-template-id="team-card-4-role" class="canva-text team-role" style="font-weight: 400; font-style: normal; font-size: 17px;">Photography Editor</p>
+          </div>
+         </div>
+        </article>
+       </div>
+       <div class="team-controls" aria-label="Team carousel controls">
+        <button type="button" data-template-id="team-prev" class="canva-button team-control" id="team-prev" aria-label="Previous team member" style="color: rgb(28, 26, 22); font-weight: 600; font-style: normal; font-size: 17px;">←</button> <button type="button" data-template-id="team-next" class="canva-button team-control" id="team-next" aria-label="Next team member" style="color: rgb(28, 26, 22); font-weight: 600; font-style: normal; font-size: 17px;">→</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="latest-issue" class="w-full rule bg-[#1a1a1a]">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+     <img data-template-id="issue-cover" class="canva-image editorial-image w-full max-w-sm mx-auto aspect-[3/4] object-cover shadow-2xl" loading="lazy" src="images/cover-page.png" alt="Harmattan Magazine Issue 01 cover">
+     <div>
+      <p data-template-id="issue-label" class="canva-text sans font-semibold uppercase tracking-[.2em] mb-3" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 16px;">Latest Issue</p>
+      <h2 data-template-id="issue-heading" class="canva-text display font-bold mb-6" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 28px;">Issue 01 — Beginnings</h2>
+      <p data-template-id="issue-desc" class="canva-text leading-relaxed mb-8" style="color: rgb(160, 154, 148); font-weight: 400; font-style: normal; font-size: 19px;">Our debut issue explores what it means to start — new cities, new art, new ways of seeing. Featuring long-form essays, photographic stories, and conversations with makers finding their way.</p>
+      <ul class="mb-10 space-y-2">
+       <li data-template-id="issue-feature-1" class="canva-text sans" style="color: rgb(160, 154, 148); font-weight: 400; font-style: normal; font-size: 19px;">→ Long-form narrative essays</li>
+       <li data-template-id="issue-feature-2" class="canva-text sans" style="color: rgb(160, 154, 148); font-weight: 400; font-style: normal; font-size: 19px;">→ Photo essays and visual storytelling</li>
+       <li data-template-id="issue-feature-3" class="canva-text sans" style="color: rgb(160, 154, 148); font-weight: 400; font-style: normal; font-size: 19px;">→ Interviews with emerging creatives</li>
+      </ul>
+      <div class="flex flex-wrap gap-4">
+       <a href="latest-issue.html" data-page-id="PBqvLVDvkPpKkTH0" data-template-id="issue-cta-read" class="canva-button sans font-semibold px-7 py-3.5 bg-white hover:bg-[#f3f0ec] transition-colors" style="background: rgb(255, 255, 255); color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Read Issue</a> <a href="order-print.html" data-page-id="PBJJ2pcrMK0w8gLq" data-template-id="issue-cta-buy" class="canva-button arrow-button sans font-semibold px-7 py-3.5 border-2 border-white hover:bg-[#f3f0ec] hover:text-[#1a1a1a] transition-colors" style="background: transparent; color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 17px;">Buy Print Edition</a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="newsletter" class="w-full rule bg-[#ebe3d2]">
+    <div class="max-w-2xl mx-auto px-6 py-20 text-center">
+     <h2 data-template-id="newsletter-heading" class="canva-text display font-bold mb-4" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">Stay in the story.</h2>
+     <p data-template-id="newsletter-copy" class="canva-text mb-8" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">A free weekly letter with one story, one idea, and one thing worth your attention. No spam, ever.</p>
+     <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <label data-template-id="newsletter-label" for="newsletter-email" class="canva-text sr-only" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Email address</label> <input data-template-id="newsletter-input" id="newsletter-email" type="email" autocomplete="email" required="" class="canva-input flex-1 min-w-0 px-4 py-3 border border-[#e8e4df] bg-white sans focus:border-[#c4553a]" placeholder="Your email address" style="font-weight: 400; font-style: normal; font-size: 17px;"> <button data-template-id="newsletter-btn" type="submit" class="canva-button sans font-semibold px-6 py-3 bg-[#1a1a1a] text-white hover:bg-[#c4553a] transition-colors" style="background: rgb(26, 26, 26); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 17px;">Subscribe</button>
+     </form>
+     <p id="newsletter-success" data-template-id="newsletter-success" class="canva-text hidden sans mt-4" role="status" style="color: rgb(21, 128, 61); font-weight: 400; font-style: normal; font-size: 17px;">Thank you! You're on the list.</p>
+     <p id="newsletter-error" data-template-id="newsletter-error" class="canva-text hidden sans mt-4" role="alert" style="color: rgb(179, 65, 45); font-weight: 400; font-style: normal; font-size: 17px;">We couldn't confirm your subscription. Please check your connection and try again.</p>
+    </div>
+   </section>
+   <section id="advertise" class="w-full rule">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+     <div class="max-w-3xl">
+      <p data-template-id="advertise-label" class="canva-text sans font-semibold uppercase tracking-[.2em] mb-3" style="color: rgb(196, 85, 58); font-weight: 600; font-style: normal; font-size: 16px;">For Partners</p>
+      <h2 data-template-id="advertise-heading" class="canva-text display font-bold mb-4" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">Advertise With Us</h2>
+      <p data-template-id="advertise-copy" class="canva-text leading-relaxed mb-10" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">Reach a discerning audience of readers, creatives, and cultural leaders. We offer thoughtful advertising partnerships that respect our readers and elevate your brand.</p>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div data-template-id="advertise-block-1" class="canva-card border border-[#e8e4df] p-6" style="background: rgb(255, 255, 255);">
+       <p data-template-id="advertise-stat-1" class="canva-text display font-bold mb-1" style="color: rgb(196, 123, 64); font-weight: 700; font-style: normal; font-size: 28px;">Readers</p>
+       <p data-template-id="advertise-desc-1" class="canva-text sans" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Engaged readers across digital and print</p>
+      </div>
+      <div data-template-id="advertise-block-2" class="canva-card border border-[#e8e4df] p-6" style="background: rgb(255, 255, 255);">
+       <p data-template-id="advertise-stat-2" class="canva-text display font-bold mb-1" style="color: rgb(196, 123, 64); font-weight: 700; font-style: normal; font-size: 28px;">8 min</p>
+       <p data-template-id="advertise-desc-2" class="canva-text sans" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Average time spent per story — deep, focused attention</p>
+      </div>
+      <div data-template-id="advertise-block-3" class="canva-card border border-[#e8e4df] p-6" style="background: rgb(255, 255, 255);">
+       <p data-template-id="advertise-stat-3" class="canva-text display font-bold mb-1" style="color: rgb(196, 123, 64); font-weight: 700; font-style: normal; font-size: 28px;">Custom</p>
+       <p data-template-id="advertise-desc-3" class="canva-text sans" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Branded content, sponsorships, and bespoke partnerships</p>
+      </div>
+     </div><a href="advertise.html" data-page-id="PBp5KYp4Tw25M2km" data-template-id="advertise-cta" class="canva-button arrow-button sans font-semibold px-7 py-3.5 inline-block border-2 border-[#c47b40] hover:bg-[#f3f0ec] transition-colors" style="background: transparent; color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">Explore Advertising</a>
+    </div>
+   </section>
+   <section class="w-full rule bg-[#ebe3d2]">
+    <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
+     <img data-template-id="print-image" class="canva-image editorial-image w-48 md:w-56 aspect-[3/4] object-cover shadow-lg" loading="lazy" src="images/cover-page.png" alt="Harmattan Magazine Issue 01 print cover">
+     <div>
+      <h2 data-template-id="print-heading" class="canva-text display font-bold mb-3" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 28px;">Own the Print Edition</h2>
+      <p data-template-id="print-copy" class="canva-text leading-relaxed mb-6" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 19px;">Issue 01 is available as a beautiful 120-page printed magazine. Designed to be kept, shared, and returned to.</p><a href="order-print.html" data-page-id="PBJJ2pcrMK0w8gLq" data-template-id="print-cta" class="canva-button sans font-semibold inline-block px-6 py-3 bg-[#c47b40] text-white hover:bg-[#a8432d] transition-colors" style="background: rgb(196, 123, 64); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 17px;">Buy Issue 01</a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer data-template-id="footer-section" class="canva-footer w-full border-t border-[#e8e4df]" style="background: rgb(250, 248, 245);">
+   <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-6 gap-10">
+     <div class="md:col-span-2">
+      <div class="flex items-center gap-1 mb-3">
+       <a href="index.html" aria-label="Harmattan home"><img data-template-id="footer-logo" class="canva-image h-10 w-auto object-contain" loading="lazy" src="images/logo.png" alt="Harmattan logo vector"></a> <span class="wordmark" aria-label="HARMATTAN"><a href="index.html" data-template-id="footer-wordmark-h" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">H</a><a href="index.html" data-template-id="footer-wordmark-a" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">A</a><a href="index.html" data-template-id="footer-wordmark-r" class="canva-link decorative" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">R</a><a href="index.html" data-template-id="footer-wordmark-m" class="canva-link cinzel" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">M</a><a href="index.html" data-template-id="footer-wordmark-a-2" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">A</a><a href="index.html" data-template-id="footer-wordmark-t" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">T</a><a href="index.html" data-template-id="footer-wordmark-t-2" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">T</a><a href="index.html" data-template-id="footer-wordmark-a-3" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">A</a><a href="index.html" data-template-id="footer-wordmark-n" class="canva-link" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 28px;">N</a></span>
+      </div>
+      <p data-template-id="footer-statement" class="canva-text leading-relaxed" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Stories, perspectives and ideas worth staying with. A magazine for readers who take their time.</p>
+     </div>
+     <div class="flex flex-col gap-2">
+      <p data-template-id="footer-col1-title" class="canva-text sans font-bold uppercase tracking-[.15em] mb-2" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 17px;">Explore</p><a href="#featured-stories" data-template-id="footer-col1-link1" class="canva-link sans hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Stories</a> <a href="latest-issue.html" data-page-id="PBqvLVDvkPpKkTH0" data-template-id="footer-col1-link2" class="canva-link sans hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Latest Issue</a> <a href="about.html" data-page-id="PBfLHbnqRZsGLWky" data-template-id="footer-col1-link3" class="canva-link sans hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">About</a>
+     </div>
+     <div class="flex flex-col gap-2">
+      <p data-template-id="footer-col2-title" class="canva-text sans font-bold uppercase tracking-[.15em] mb-2" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 17px;">Connect</p><a href="contact.html" data-page-id="PBJJ2pcrMK0w8gLq" data-template-id="footer-col2-link3" class="canva-link sans hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Contact Us</a>
+     </div>
+     <div class="flex flex-col gap-2">
+      <p data-template-id="footer-col3-title" class="canva-text sans font-bold uppercase tracking-[.15em] mb-2" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 17px;">For Partners</p><a href="advertise.html" data-page-id="PBp5KYp4Tw25M2km" data-template-id="footer-col3-link1" class="canva-link sans hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Advertise</a>
+     </div>
+     <div>
+      <p data-template-id="footer-legal-title" class="canva-text sans font-bold uppercase tracking-[.15em] mb-2" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 17px;">Legal</p>
+      <a href="privacy-terms.html#privacy" data-template-id="footer-legal-link1" class="canva-link sans block mb-2 hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Privacy</a>
+      <a href="privacy-terms.html#terms" data-template-id="footer-legal-link2" class="canva-link sans block hover:underline" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">Terms</a>
+     </div>
+    </div>
+    <div class="rule mt-12 pt-6">
+     <p data-template-id="footer-copyright" class="canva-text sans text-center" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Harmattan. All rights reserved.</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      const opening = mobileMenu.classList.toggle('hidden') === false;
+      menuToggle.setAttribute('aria-expanded', String(opening));
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    const preview = document.querySelector('[data-template-id="editor-note"]');
+    const full = document.getElementById('editor-full');
+    const expand = document.getElementById('editor-expand');
+    const collapse = document.getElementById('editor-collapse');
+    expand.addEventListener('click', () => {
+      preview.classList.add('hidden');
+      expand.classList.add('hidden');
+      full.classList.remove('hidden');
+      collapse.classList.remove('hidden');
+      expand.setAttribute('aria-expanded', 'true');
+      collapse.focus();
+    });
+    collapse.addEventListener('click', () => {
+      full.classList.add('hidden');
+      collapse.classList.add('hidden');
+      preview.classList.remove('hidden');
+      expand.classList.remove('hidden');
+      expand.setAttribute('aria-expanded', 'false');
+      expand.focus();
+    });
+
+    const teamGrid = document.getElementById('team-grid');
+    const teamButtons = [...document.querySelectorAll('[data-team]')];
+    const originalCards = [...teamGrid.children];
+    let teamIndex = 0;
+    let teamTimer;
+    let teamPaused = false;
+    function showTeam(index) {
+      teamIndex = (index + originalCards.length) % originalCards.length;
+      const chosen = originalCards[teamIndex];
+      teamButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.team === chosen.id)));
+      originalCards.forEach(card => card.classList.toggle('featured', card === chosen));
+      originalCards.forEach((_, offset) => teamGrid.appendChild(originalCards[(teamIndex + offset) % originalCards.length]));
+    }
+    function restartTeamTimer() {
+      clearInterval(teamTimer);
+      teamTimer = setInterval(() => { if (!teamPaused) showTeam(teamIndex + 1); }, 5200);
+    }
+    teamButtons.forEach(button => button.addEventListener('click', () => {
+      showTeam(originalCards.findIndex(card => card.id === button.dataset.team));
+      restartTeamTimer();
+    }));
+    document.getElementById('team-prev').addEventListener('click', () => { showTeam(teamIndex - 1); restartTeamTimer(); });
+    document.getElementById('team-next').addEventListener('click', () => { showTeam(teamIndex + 1); restartTeamTimer(); });
+    teamGrid.addEventListener('click', event => {
+      const card = event.target.closest('.team-card');
+      if (card) { showTeam(originalCards.indexOf(card)); restartTeamTimer(); }
+    });
+    teamGrid.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        showTeam(teamIndex + (event.key === 'ArrowRight' ? 1 : -1));
+        restartTeamTimer();
+      } else if ((event.key === 'Enter' || event.key === ' ') && event.target.classList.contains('team-card')) {
+        event.preventDefault();
+        showTeam(originalCards.indexOf(event.target));
+        restartTeamTimer();
+      }
+    });
+    teamGrid.addEventListener('mouseenter', () => { teamPaused = true; });
+    teamGrid.addEventListener('mouseleave', () => { teamPaused = false; restartTeamTimer(); });
+    teamGrid.addEventListener('focusin', () => { teamPaused = true; });
+    teamGrid.addEventListener('focusout', () => { teamPaused = false; restartTeamTimer(); });
+    restartTeamTimer();
+
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterButton = newsletterForm.querySelector('button[type="submit"]');
+    const newsletterEmail = document.getElementById('newsletter-email');
+    const success = document.getElementById('newsletter-success');
+    const error = document.getElementById('newsletter-error');
+    let sheetReady = false;
+    const handler = { onDataChanged() {} };
+
+    async function initializeSheet() {
+      try {
+        const result = await window.dataSdk.init(handler);
+        sheetReady = result.isOk;
+        if (!sheetReady) error.classList.remove('hidden');
+      } catch (_) {
+        sheetReady = false;
+        error.classList.remove('hidden');
+      }
+    }
+    initializeSheet();
+
+    newsletterForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!newsletterForm.reportValidity()) return;
+      success.classList.add('hidden');
+      error.classList.add('hidden');
+      newsletterButton.disabled = true;
+      newsletterButton.classList.add('opacity-60', 'cursor-wait');
+      try {
+        if (!sheetReady) {
+          const initResult = await window.dataSdk.init(handler);
+          sheetReady = initResult.isOk;
+        }
+        if (!sheetReady) {
+          error.classList.remove('hidden');
+          return;
+        }
+        const result = await window.dataSdk.create({
+          email: newsletterEmail.value.trim(),
+          subscribed_at: new Date().toISOString()
+        });
+        if (result.isOk) {
+          newsletterEmail.value = '';
+          success.classList.remove('hidden');
+        } else {
+          error.classList.remove('hidden');
+        }
+      } catch (_) {
+        error.classList.remove('hidden');
+      } finally {
+        newsletterButton.disabled = false;
+        newsletterButton.classList.remove('opacity-60', 'cursor-wait');
+      }
+    });
+  </script>
+ </body></html>

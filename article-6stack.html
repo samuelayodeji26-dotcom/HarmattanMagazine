@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261012-04-4942f96","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6Stack — Harmattan Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&amp;family=Playfair+Display:wght@400;600;700&amp;family=Source+Serif+Pro:wght@400;600&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --cream:#faf8f5; --ink:#1a1a1a; --muted:#6b6560; --accent:#c47b40; --rule:#e8e4df; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { width:100%; margin:0; color:var(--ink); background:var(--cream); font-family:'Source Serif Pro',serif; }
+    .masthead { font-family:'Forum',serif; letter-spacing:-.045em; text-decoration:none; }
+    .sans { font-family:'DM Sans',sans-serif; }
+    .display { font-family:'Playfair Display',serif; }
+    .article-copy { font-size:clamp(1.08rem,1.4vw,1.24rem); line-height:1.82; }
+    .article-copy p { margin:0 0 1.55em; }
+    .article-copy h2 { margin:3.4rem 0 1.3rem; padding-top:1.2rem; border-top:1px solid var(--rule); font-family:'DM Sans',sans-serif; font-size:clamp(1rem,1.8vw,1.25rem); font-weight:700; letter-spacing:.12em; line-height:1.5; }
+    .figure { margin:2.8rem 0 3.3rem; }
+    .image-placeholder { position:relative; display:grid; place-items:center; min-height:230px; aspect-ratio:16/9; background:#d8c9b5; overflow:hidden; }
+    .image-placeholder.hero { min-height:320px; aspect-ratio:16/8; }
+
+    figcaption { margin-top:12px; color:var(--muted); font:500 12px/1.6 'DM Sans',sans-serif; letter-spacing:.09em; text-transform:uppercase; }
+    blockquote { margin:3.5rem 0; padding:1.4rem 0 1.4rem clamp(1.2rem,4vw,2.5rem); border-left:3px solid var(--accent); font:italic clamp(1.45rem,2.5vw,2.15rem)/1.45 'Playfair Display',serif; }
+    button,a { cursor:pointer; }
+    button:focus-visible,a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    @media(max-width:640px) {
+      .image-placeholder.hero { min-height:240px; aspect-ratio:4/3; }
+      .image-placeholder { min-height:210px; }
+      .article-copy h2 { margin-top:2.7rem; }
+    }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full" style="background: rgb(250, 248, 245);">
+  <header class="w-full border-b border-[#e8e4df]">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex items-center justify-between gap-5"><a href="index.html" data-template-id="masthead" class="canva-text masthead text-[clamp(1.7rem,4vw,2.3rem)]" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal;">HARMATTAN</a> <span data-template-id="header-edition" class="canva-text sans uppercase tracking-[.2em] text-right" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 11px;">ISSUE 01 / ARCHITECTURE</span>
+   </div>
+  </header>
+  <main class="w-full">
+   <article aria-labelledby="article-title" class="w-full">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-9 md:pt-14"><a href="index.html#featured-stories" data-template-id="back-top" class="canva-button sans font-semibold hover:underline inline-block" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 17px; text-decoration: none;">← Back to Featured Stories</a>
+     <div class="mt-12 md:mt-20 border-t border-[#e8e4df] pt-5">
+      <p data-template-id="article-category" class="canva-tag sans uppercase tracking-[.22em]" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 13px;">Architecture</p>
+     </div>
+     <h1 id="article-title" data-template-id="article-title-text" class="canva-text display font-semibold max-w-5xl leading-[1.13] mt-7 mb-8 break-words" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 34px;">6Stack: Re-imagining the West African Landscape
+Through Climate, Culture and Continuity</h1>
+     <p data-template-id="article-deck" class="canva-text sans uppercase tracking-[.18em] mb-12" style="color: rgb(107, 101, 96); font-weight: 600; font-style: normal; font-size: 13px;">A DESIGN PROPOSAL BY CCWORKSHOP</p>
+     <figure class="figure">
+      <img data-template-id="hero-placeholder-area" loading="lazy" class="canva-image canva-panel image-placeholder hero w-full object-cover" src="images/6-stack-hero.png" alt="6Stack Hero Overview">
+     </figure>
+    </div>
+    <div class="max-w-[780px] mx-auto px-5 sm:px-8 pb-20 article-copy">
+     <p data-template-id="p01" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Stack is a six-storey residential design proposal comprising 20 residential district of Lagos, the project explores a fundamental question:</p>
+     <p data-template-id="p02" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">how can contemporary architecture in West Africa remain responsive to its environment while retaining a meaningful connection to the cultural landscapes from which it emerges?</p>
+     <p data-template-id="p03" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">For Architectural Design Studio CCWorkshop, the answer lies in rejecting the conventional approach of reproducing vernacular architecture literally and treating culture as an applied aesthetic.</p>
+     <p data-template-id="p04" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Instead, 6Stack explores vernacular architecture as a process of adaptation: a way of making architecture that responds to climate, available resources, patterns of living, and the social realities of its time. The project therefore begins with the environment.</p>
+     <p data-template-id="p05" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Rapid urbanisation increasingly places pressure on some of the qualities that have historically made tropical environments comfortable and habitable: access to airflow, daylight, views, shade, and a meaningful relationship with the natural environment.</p>
+     <h2 data-template-id="h-bioclimate" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 26px;">A BIOCLIMATIC RESPONSE</h2>
+     <figure class="figure">
+      <img data-template-id="site-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-density.jpg" alt="Stonebridge Concept Slides">
+      <figcaption data-template-id="site-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">SITE EVOLUTION AND URBAN DENSITY (2020 - 2025)</figcaption>
+     </figure>
+     <p data-template-id="p06" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Three conditions became particularly important in developing 6Stack: air movement around and through the building, visual connection to the outdoors, and thermal comfort without excessive dependence on mechanical systems. Rather than treating these as technical considerations to be resolved after the form had been established, they became generators of the architecture itself.</p>
+     <p data-template-id="p07" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">The building mass was divided into two volumes and offset from one another, creating greater permeability around the building and improving opportunities for cross-ventilation. This configuration also allows apartments to maintain stronger visual connections with the surrounding environment despite the constraints of a dense urban setting.</p>
+     <figure class="figure">
+      <img data-template-id="wind-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-wind.jpg" alt="Wind Diagram">
+      <figcaption data-template-id="wind-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">WIND HARNESSING DIAGRAM</figcaption>
+     </figure>
+     <figure class="figure">
+      <img data-template-id="views-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-views.jpg" alt="Views Diagram">
+      <figcaption data-template-id="views-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">UNINTERRUPTED VIEWS DIAGRAM</figcaption>
+     </figure>
+     <figure class="figure">
+      <img data-template-id="solar-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-sun.jpg" alt="Solar Mitigation Massing">
+      <figcaption data-template-id="solar-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">SOLAR MITIGATION MASSING</figcaption>
+     </figure>
+     <p data-template-id="p08" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Rather than reproducing the style, 6Stack abstracts one of its defining spatial characteristics: shaded verandah as a mediator between building and environment.</p>
+     <p data-template-id="p09" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">The resulting architecture draws from a particular layer of Lagos's architectural history: the Afro-Brazilian buildings introduced and developed by formerly enslaved Africans who returned from Brazil and established communities across West Africa.</p>
+     <p data-template-id="p10" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">The building envelope was then carved and recessed in response to solar exposure. These recesses produce deep verandahs that shade both the facade and the spaces behind it, reducing direct solar heat gain while creating transitional spaces between interior and exterior.</p>
+     <figure class="figure">
+      <img data-template-id="thermal-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-thermal.jpg" alt="Thermal Boundary Sketch">
+      <figcaption data-template-id="thermal-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">THERMAL BOUNDARY TRANSITION SKETCH</figcaption>
+     </figure>
+     <blockquote data-template-id="quote-one" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: italic; font-size: 17px;">“In this sense, the form of 6Stack is not simply an expression of an architectural idea. The form is the environmental strategy.”</blockquote>
+     <h2 data-template-id="h-continuity" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 26px;">VERNACULAR AS CONTINUITY, NOT REPLICATION</h2>
+     <figure class="figure">
+      <img data-template-id="facade-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-facade.jpg">
+      <figcaption data-template-id="facade-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">ANATOMY OF THE FACADE: DEEP VERANDAHS AND WRAPPING BALUSTRADES</figcaption>
+     </figure>
+     <p data-template-id="p11" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Historically, the verandah provided shade, encouraged ventilation, extended domestic life outdoors, and created a gradual transition between private interior spaces and the public realm. In 6Stack, this familiar spatial logic is reinterpreted within a contemporary apartment building.</p>
+     <figure class="figure">
+      <img data-template-id="domestic-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-outdoors.png" alt="Outdoor Living">
+      <figcaption data-template-id="domestic-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">EXTENDING DOMESTIC LIFE OUTDOORS</figcaption>
+     </figure>
+     <p data-template-id="p12" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">This is where we see the potential of a new vernacular. Vernacular architecture has never been static. It evolves as climates, technologies, economies, materials, and ways of living change. Cultural continuity therefore does not require preserving a particular form unchanged. It can also mean allowing the underlying intelligence of that form to endure, mutate, and find relevance in new circumstances.</p>
+     <p data-template-id="p13" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">6Stack becomes an exploration of this continuity: a contemporary building informed by a historical architectural memory, but shaped by the environmental and socioeconomic realities of present-day Lagos.</p>
+     <h2 data-template-id="h-afrominimalism" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 26px;">AFROMINIMALISM AS ABSTRACTION</h2>
+     <p data-template-id="p14" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">The project approaches Afrominimalism not as the addition of recognisably African motifs, but as an exercise in reduction, abstraction, and reinterpretation.</p>
+     <p data-template-id="p15" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">The architectural language is deliberately restrained. The deep verandahs, recessed walls, rhythmic openings, screens, and structural projections are derived from environmental and spatial requirements, while their composition gives the building a distinct cultural expression.</p>
+     <figure class="figure">
+      <img data-template-id="rhythm-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-openings.png" alt="Rhythmic Openings">
+      <figcaption data-template-id="rhythm-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">RHYTHMIC OPENINGS AND STRUCTURAL PROJECTIONS</figcaption>
+     </figure>
+     <figure class="figure">
+      <img data-template-id="clay-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-modular.png" alt="Clay Screens">
+      <figcaption data-template-id="clay-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">MODULAR CLAY BLOCK SCREENS</figcaption>
+     </figure>
+     <p data-template-id="p16" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">On the side elevations, modular clay block screens introduce a porous layer to the facade. They filter direct sunlight while maintaining airflow and visual permeability, creating a relationship between enclosure and openness that is characteristic of many tropical architectural traditions.</p>
+     <p data-template-id="p17" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Rather than decorating the building with references to place, the project attempts to make place legible through performance. The architecture becomes African not because it applies a predetermined visual vocabulary, but because its spatial and environmental logic is rooted in the conditions of West African life.</p>
+     <figure class="figure">
+      <img data-template-id="concierge-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-concierge.png" alt="Concierge Interior">
+      <figcaption data-template-id="concierge-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">CONCIERGE INTERIOR</figcaption>
+     </figure>
+     <h2 data-template-id="h-sustainability" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 26px;">SUSTAINABILITY AS DESIGN INTELLIGENCE</h2>
+     <p data-template-id="p18" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">At 6Stack, sustainability is approached as a design advantage rather than a collection of technologies added to an otherwise complete building.</p>
+     <figure class="figure">
+      <img data-template-id="unified-area" loading="lazy" class="canva-image canva-panel image-placeholder w-full object-cover" src="images/6-stack-structural.jpg" alt="Unified Environmental Approach">
+      <figcaption data-template-id="unified-caption" class="canva-text" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 17px;">A UNIFIED ENVIRONMENTAL APPROACH</figcaption>
+     </figure>
+     <p data-template-id="p19" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">At roof level, gutters collect rainwater for potential reuse, while photovoltaic panels transform the roof into an active environmental surface capable of harvesting solar energy. Together, these strategies reduce the building's environmental demand while improving the quality of the spaces it produces.</p>
+     <p data-template-id="p20" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">For us, this is ultimately what sustainability in architecture should offer: not simply a more efficient building, but a better relationship between building, climate, culture, and people.</p>
+     <p data-template-id="p21" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">Solar control is embedded within the building form through recessed facades, deep verandahs, and carefully articulated projections that provide shade and reduce rain ingress. Porous clay screens moderate sunlight while supporting ventilation within the circulation spaces.</p>
+     <h2 data-template-id="h-future" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 700; font-style: normal; font-size: 26px;">TOWARDS A NEW WEST AFRICAN VERNACULAR</h2>
+     <p data-template-id="p22" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">The result is an architecture that does not seek to recreate the past, but to continue its conversation.</p>
+     <p data-template-id="p23" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">6Stack is therefore less an attempt to define what a contemporary West African building should look like and more an exploration of how one might emerge.</p>
+     <p data-template-id="p24" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">If vernacular architecture is architecture that exemplifies the emergence of buildings and settlements as a result of adaptation to natural conditions in architectural principles, in which the bioclimatic response to the conditions of the natural environment is emphasised (Rajkovic et al., 2022).</p>
+     <p data-template-id="p25" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: normal; font-size: 17px;">It begins with the realities of Lagos: increasing density, a demanding tropical climate, limited urban permeability, changing patterns of living, and the need to build more resource-efficiently. It looks backward to architectural traditions that evolved through similar negotiations between climate, culture, and everyday life. It then brings these ideas forward through contemporary construction, abstraction, and restraint.</p>
+     <blockquote data-template-id="quote-two" class="canva-text" style="color: rgb(26, 26, 26); font-weight: 400; font-style: italic; font-size: 17px;">“6Stack proposes that the new vernacular is not a style. It is a way of thinking: architecture that belongs to its climate, its culture, its economy, and its time.”</blockquote>
+     <p data-template-id="credit" class="canva-text sans" style="color: rgb(196, 123, 64); font-weight: 400; font-style: normal; font-size: 16px;">ccworkshop.design</p>
+    </div>
+   </article>
+  </main>
+  <footer data-template-id="article-footer" class="canva-footer w-full border-t border-[#e8e4df]" style="background: rgb(235, 227, 210);">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 md:py-20">
+    <p data-template-id="footer-kicker" class="canva-text sans uppercase tracking-[.2em] mb-5" style="color: rgb(107, 101, 96); font-weight: 400; font-style: normal; font-size: 12px;">HARMATTAN MAGAZINE / ARCHITECTURE</p>
+    <p data-template-id="footer-title" class="canva-text display font-semibold leading-tight max-w-3xl mb-9" style="color: rgb(26, 26, 26); font-weight: 600; font-style: normal; font-size: 17px;">6Stack: Re-imagining the West African Landscape
+Through Climate, Culture and Continuity</p><a href="index.html#featured-stories" data-template-id="back-bottom" class="canva-button sans font-semibold hover:underline inline-block" style="color: rgb(196, 123, 64); font-weight: 600; font-style: normal; font-size: 17px; text-decoration: none;">← Back to Featured Stories</a>
+   </div>
+  </footer>
+ </body></html>
